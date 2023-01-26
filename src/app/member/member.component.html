@@ -1,0 +1,143 @@
+<div class="sports" style="text-align: center;">
+
+  <h1>SportsAcademy</h1>
+
+</div>
+
+
+
+
+
+<div class="row formcenter">
+
+  <!-- <h1 className="text-center" >SportsAcademy</h1> -->
+
+  <div class= " col-md-6 mt-2">
+
+    <form [formGroup]="meGroup">
+
+      <!-- <div class="form-group">  -->
+
+      <!-- <label for="id">Id</label>
+
+            <input type="text" formControlName="id" /> -->
+
+
+
+      <!-- </div>  -->
+
+      <div class="form-group">
+
+        <label for="membername">Membername</label>
+
+        <input type="text" formControlName="membername" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['membername'].dirty && meGroup.hasError('required','membername')"
+        class="text-danger">*Member Name is required </small>
+
+
+
+      <div class="dropdown">
+        <label for="bloodGroup">BloodGroup</label><br>
+        <select id="bloodGroup" formControlName="bloodGroup">
+          <option *ngFor="let option of bloodGroups">{{option}}</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+
+        <label for="dobDate">DobDate</label>
+        <input type="date" formControlName="dobDate" class="form-control" />
+      </div>
+
+
+
+      <div class="form-group">
+
+        <label for="address">Address</label>
+
+        <input type="text" formControlName="address" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['address'].dirty && meGroup.hasError('required','address')"
+        class="text-danger">*Address is required </small>
+
+      <div class="form-group">
+
+        <label for="height">Height</label>
+
+        <input type="text" formControlName="height" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['height'].dirty && meGroup.hasError('required','height')"
+        class="text-danger">*Height is required </small>
+
+      <div class="form-group">
+
+        <label for="weight">Weight</label>
+
+        <input type="text" formControlName="weight" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['weight'].dirty && meGroup.hasError('required','weight')"
+        class="text-danger">*Weight is required </small>
+
+      <div class="form-group">
+
+        <label for="mobilePhone">MobilePhone</label>
+
+        <input type="text" formControlName="mobilePhone" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['mobilePhone'].dirty && meGroup.hasError('required','mobilePhone')"
+        class="text-danger">*MobilePhone is required </small>
+
+      <div class="form-group">
+
+        <label for="age">Age</label>
+
+        <input type="text" formControlName="age" class="form-control" />
+
+      </div>
+      <small *ngIf="meGroup.controls['age'].dirty && meGroup.hasError('required','age')" class="text-danger">*Age is
+        required </small>
+
+
+      <div class="dropdown">
+        <label for="gender">Gender</label><br>
+        <select id="gender" formControlName="gender">
+          <option *ngFor="let option of Gender">{{option}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+
+        <label for="sportType">SportType</label>
+
+        <input type="text" formControlName="sportType" class="form-control" />
+
+      </div>
+
+      <small *ngIf="meGroup.controls['sportType'].dirty && meGroup.hasError('required','sportType')"
+        class="text-danger">*SportType is required </small>
+
+
+
+
+
+
+      <div>
+        <input type="button" value="Save" (click)="saveMember()" class="btn btn-sm btn-primary" />
+
+
+
+
+
+
+
+      </div>
+
+    </form>
+
+  </div>
+</div>

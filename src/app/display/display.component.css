@@ -1,0 +1,63 @@
+
+table {
+font-family: 'Times New Roman', sans-serif;
+ border-collapse: calc();
+ width: 30%;
+ box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+ background:#d5d7db;
+ border-radius: 10px;
+ font-weight: bold;
+ margin-left: 80px;
+ }
+ td, th {
+ border: 1px solid black;
+ text-align: center;
+
+ padding: 2px;
+/* background-color :lightblue;  */
+ }
+th{
+ background-color :#2e333b;
+ color: white;
+}
+ tr:nth-child() {
+ background-color: white;
+ }
+.btn{
+  color: white;
+  background-color: gray;
+  font-weight: bold;
+}
+
+
+.formcolor2{
+  box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+background:#d5d7db;
+border-radius: 10px;
+font-weight: bold;
+  /* margin-top: 20px;
+  margin-bottom: 20px; */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  input {
+    font-size: 8px;
+  }
+
+  .memberlist{
+    margin-top: 10px;
+    border: 1px solid;
+  /*   padding: 10px ; */
+    box-shadow: 5px 10px #888888;
+    text-align: center;
+    margin-bottom: 15px;
+
+  }
+
+  .btnremove{
+    background: none;
+    border: none;
+  }
+.btnremove:hover{
+transform: scale(1.2);
+}

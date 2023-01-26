@@ -1,0 +1,12 @@
+.navcolor{
+background-color: #2e333b;
+}
+.btncolor{
+  background-color: #c9bb32;
+  color: White;
+  font-weight: bold;
+}
+
+.btncolor:hover{
+  transform: scale(1.1);
+  }
